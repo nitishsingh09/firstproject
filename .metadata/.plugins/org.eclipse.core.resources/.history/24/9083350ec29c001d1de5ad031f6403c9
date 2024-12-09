@@ -1,0 +1,34 @@
+package arrayList;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.stream.Collectors;
+
+public class Arr1 {
+	
+	public static void main(String[] args) {
+		
+		List<Integer> l = Arrays.asList(4,5,2,6,8,44,5,566,12,515,8,646);
+		
+		List<Integer> list = l.stream().filter(x->x>20).collect(Collectors.toList());
+		
+//		System.out.println(list);
+		
+		List<Integer> list1 = l.stream().filter(x->x%2==0).collect(Collectors.toList());
+//		System.out.println(list1);
+		
+		
+//		Reverse the arraylist by using list iterator.
+		
+		
+		ListIterator<Integer> ll = l.listIterator(l.size());
+		while(ll.hasPrevious()) {
+			System.out.println(ll.previous());
+		}
+		
+		
+		
+	}
+
+}

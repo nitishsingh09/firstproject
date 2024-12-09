@@ -1,0 +1,13 @@
+package a;
+
+public class C implements P{
+	int y=10;
+	void test() {
+		System.out.println("ashish");
+	}
+	public static void main(String[] args) {
+		System.out.println(P.x);
+		
+	}
+
+}

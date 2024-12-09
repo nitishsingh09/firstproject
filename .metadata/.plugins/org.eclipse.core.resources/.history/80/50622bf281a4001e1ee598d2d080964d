@@ -1,0 +1,124 @@
+package filter;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class TermianalOperation {
+	
+	public static void main(String[] args) {
+		 List<String> stringList = new ArrayList<String>();
+
+	        stringList.add("Guides");
+	        stringList.add("JavPython");
+		 	stringList.add("Guies");
+		 	stringList.add("G");
+		 	stringList.add("Guies");
+		 	stringList.add("jav");
+//	        anyMatch method
+//	        boolean s = stringList.stream().anyMatch(value->value.length()%2==0);
+//	        System.out.println(s);
+		 	
+		 	
+//	        boolean nn = stringList.stream().anyMatch(v->v.startsWith("Jav"));
+//	        System.out.println(nn);
+		 	
+	        //allMatch method
+//	        boolean b = stringList.stream().allMatch(values -> values.contains("G"));
+//	       System.out.println(b);
+	      
+	       //noneMatch method
+		 	
+	       boolean n = stringList.stream().noneMatch(value-> "Guides".equals(value));
+	        if(n) {
+	        	System.out.println("not present");
+	        }
+	        else
+	        	System.out.println("present");
+	        
+	        //collect method
+	        List<String> str = new ArrayList<String>();
+
+//	        str.add("one");
+//	        str.add("two");
+//	        str.add("three");
+//	        str.add("four");
+//	        str.add("five");
+	        
+//	        
+//
+//	        Stream<String> stream = str.stream();
+//
+//	        List<String> stringsAsUppercaseList = stream
+//	                .map(value -> value.toUpperCase())
+//	                .collect(Collectors.toList());
+//
+//	        System.out.println(stringsAsUppercaseList);
+//	        
+//	        List<String> ls = str.stream().filter(v->v.length()>3).collect(Collectors.toList());
+//	        
+//	        ls.forEach(System.out::println);
+
+	        
+	        //findAny method
+//	        Stream<String> stream1 = str.stream();
+//	        Optional<String> anyElement = stream1.findAny(	);
+//	        System.out.println(anyElement.get());
+	    
+	        //findFirst method 
+	        
+//	        Stream<String> stream2 = stringList.stream();
+//	        Optional<String> result = stream2.findFirst();
+//	        System.out.println(result.get());
+	        
+	        //reduce method 
+//	        Optional<String> streams = stringList.stream().reduce((v1,v2) -> 
+//	        	 v1+" "+v2
+//	        );
+//	        String d =streams.get();
+//	        System.out.println(d);
+	        
+//	        Stream<String > stream4 = stringList.stream();
+//	        Optional<String> reduced = stream4.reduce((l, m) -> {
+//	            return l+m;
+//	        });
+
+//	        System.out.println(reduced.get());
+	        
+	        
+	        //max method
+//	        Optional<String> stream5 = stringList.stream().max((val1, val2) -> {
+//	            return val1.compareTo(val2);
+//	        });
+//
+//	        String maxString = stream5.get();
+//
+//	        System.out.println(maxString);
+	        
+	        //min method
+	        
+//	        Optional<String> stream6 = stringList.stream().min((val1, val2) -> {
+//	            return val1.compareTo(val2);
+//	        });
+//	        String maxString2 = stream6.get();
+
+//	        System.out.println(maxString2);
+	        
+	        //toArray method
+
+//	        Stream<String> stream7 = stringList.stream();
+//
+//	        Object[] objects = stream7.toArray();
+//
+//	        System.out.println(objects[0]);
+//	        System.out.println(objects[1]);
+//	        System.out.println(objects[2]);
+	        
+	        
+	        
+//	        List<String> l = new ArrayList(Arrays.asList("one", "two"));
+//	        Stream<String> sl = l.stream();
+//	        l.add("three");
+//	        String s = sl.collect(Collectors.joining(" "));
+//	        System.out.println(s);
+	}
+}

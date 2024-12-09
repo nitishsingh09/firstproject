@@ -1,0 +1,25 @@
+package treeSet;
+
+import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.TreeSet;
+
+public class set {
+
+	
+	public static void main(String[] args) {
+		
+		TreeSet<Integer> ts = new TreeSet<>(Arrays.asList(1,2,3,6));
+		
+		System.out.println(ts);
+		
+		
+		LinkedHashSet<Integer> lhs = new LinkedHashSet<>();
+		
+		lhs.add(null);
+		lhs.add(null);
+		lhs.add(10);
+		lhs.add(12);
+		System.out.println(lhs);
+	}
+}

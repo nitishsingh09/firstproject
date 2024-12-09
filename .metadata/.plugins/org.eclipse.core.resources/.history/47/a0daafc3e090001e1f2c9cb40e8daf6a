@@ -1,0 +1,6 @@
+package a;
+
+public interface P {
+	int x=10;
+
+}

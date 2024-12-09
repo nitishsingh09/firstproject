@@ -1,0 +1,10 @@
+package a;
+
+public class S extends C {
+	@Override
+	void test() {
+	System.out.println("nnnnn");
+	}
+
+
+}

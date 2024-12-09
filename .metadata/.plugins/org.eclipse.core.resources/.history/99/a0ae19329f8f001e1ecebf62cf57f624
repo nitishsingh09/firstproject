@@ -1,0 +1,9 @@
+package accMod;
+
+public class N {
+	int i = 9;
+	
+	static void test() {
+		System.out.println(1);
+	}
+}

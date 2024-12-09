@@ -1,0 +1,18 @@
+package java8;
+
+public class LamdaExpression {
+
+	public static void main(String[] args) {
+		
+		Functional a = (x) -> {
+			int s=0;
+			 System.out.println(x*y);
+			 s=x+x;
+			 System.out.println(s);
+			 return 10;
+			};
+		a.t(10);
+		a.test();
+	}
+	
+}

@@ -1,0 +1,76 @@
+package filter;
+
+import java.util.*;
+import java.util.stream.*;
+
+
+
+public class Filter {
+	
+	public static void main(String[] args) {
+		
+		
+		List<Product> p1= new ArrayList<Product>();
+		p1.add(new Product(1,"mango",100f));
+		p1.add(new Product(2,"banana",200f));
+		p1.add(new Product(2,"banana",200f));
+		p1.add(new Product(2,"banana",200f));
+		p1.add(new Product(3,"strawberry",500f));
+
+		p1.stream().filter(product -> product.getPrice() > 100 ).	
+			forEach(product -> System.out.println(product.getPrice()));
+//	
+//		Set<Float> set = p1.stream().filter(product -> product.getPrice() < 500)
+//				.map(product -> product.getPrice()).collect(Collectors.toSet());
+//
+//		System.out.println(set);
+		
+//		Stream<Product> s1 = p1.stream();
+		
+//		s1.forEach(x -> System.out.println(x));
+//		Product pro =p1.stream().max((product1,product2) -> product1.getPrice() > product2.getPrice() ? 1 : -1).get();
+//		System.out.println(pro);
+		
+//		Optional pro1 = p1.stream().min((product1,product2) -> product1.getPrice() < product2.getPrice() ? 1 : -1);
+//		System.out.println(pro1.get());
+//		
+//		Optional<Product> min = p1.stream().min(Comparator.comparing(Product :: getPrice));
+//		if(min.isPresent()) {
+//			System.out.println(min.get().getPrice());
+//		}
+	
+//		Optional<Product> product = p1.stream().max(Comparator.comparing(Product :: getPrice));
+		
+//		if(product.isPresent()) {
+//			System.out.println(product.get().getPrice());
+//		}
+		//create empty stream
+//		Stream<Product> s= Stream.empty();
+//		s.forEach(System.out::println);
+		
+		
+		
+		
+//		List<String> collection = Arrays.asList("JAVA", "J2EE", "Spring", "Hibernate","Hibernate");
+//		List<String > col = collection.stream().filter(words -> !"Hibernate".equals(words)).collect(Collectors.toList());
+//		col.forEach(System.out::println);
+//		
+//		System.out.println(col);
+		
+//        Stream<String> stream2 = collection.stream();
+//        stream2.forEach(System.out::println);
+        
+//        Set<String> s3= new HashSet<>(collection);
+//        s3.stream().forEach(System.out::println); 
+        
+//        List<Integer> num = Arrays.asList(4, 2, 8, 9, 5, 6, 7);
+//        Stream<Integer> numgreater5 = num.stream().filter(x -> x > 5);
+//        numgreater5.forEach(System.out::println);
+//        numgreater5.forEach(System.out::println);// it will give exception
+        
+        
+        
+       
+	}
+
+}

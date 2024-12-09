@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;fl1&apos; to &apos;fileHandling1&apos;&#x0A;- Original project: &apos;fileHandling&apos;&#x0A;- Original element: &apos;fileHandling/src/fl1&apos;&#x0A;- Renamed element: &apos;fileHandling/src/fileHandling1&apos;&#x0A;- Update references to refactored element&#x0A;- Update fully qualified names in &apos;*&apos; files&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;fl1&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;fl1" name="fileHandling1" patterns="*" qualified="true" references="true" stamp="1679766570874" textual="true" version="1.0"/>
+</session>

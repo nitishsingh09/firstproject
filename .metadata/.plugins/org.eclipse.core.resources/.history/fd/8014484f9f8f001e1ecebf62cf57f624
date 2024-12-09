@@ -1,0 +1,14 @@
+package accMod;
+
+public class N {
+	private N() {
+		System.out.println("private constructor");
+	}
+	
+	int i =100;
+	public static void main(String[] args) {
+		N n = new N();
+		System.out.println(n.i);
+	}
+	
+}

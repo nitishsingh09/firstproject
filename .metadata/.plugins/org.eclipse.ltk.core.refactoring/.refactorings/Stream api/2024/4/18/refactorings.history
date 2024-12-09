@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring accessors="true" comment="Delete element from project &apos;Stream api&apos;&#x0A;- Original project: &apos;Stream api&apos;&#x0A;- Original element: &apos;filter.Str.java&apos;" description="Delete element" element1="/src&lt;filter{Str.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1714371827771" subPackages="false" version="1.0"/>&#x0A;&#x0A;</session>

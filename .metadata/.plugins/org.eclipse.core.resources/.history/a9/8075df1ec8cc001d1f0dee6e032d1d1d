@@ -1,0 +1,18 @@
+package accMod;
+
+import accMod1.A1;
+
+public class AA {
+
+	protected int i =90;
+	
+	public void test() {
+		System.out.println(11);
+	}
+	
+	public static void main(String[] args) {
+		AA  a = new A1();
+		System.out.println(a.i);
+		a.test();
+	}
+}

@@ -1,0 +1,9 @@
+package a;
+
+public class C {
+	
+	void test() {
+		System.out.println("ashish");
+	}
+
+}
