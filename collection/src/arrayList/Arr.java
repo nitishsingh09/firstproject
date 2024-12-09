@@ -6,7 +6,7 @@ import java.math.*;
 import java.util.regex.*;
 
 public class Arr {
-
+    int x = 10;
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
